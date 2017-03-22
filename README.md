@@ -1,5 +1,7 @@
-# simple-hash
-A simple hash function in go.
+## simple-hash
+### A simple hash function in go.
+
+**Files: ** *utilSimpleHash.go, utilSimpleHash_test.go*
 
 This hash function involves all characters in the key and can generally be expected to
 distribute well.
