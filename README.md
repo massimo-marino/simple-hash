@@ -3,7 +3,7 @@ A simple hash function in go.
 
 This hash function involves all characters in the key and can generally be expected to
 distribute well.
-The code computes a polynomial function (of multiplier) by use of Horner’s rule
+The code computes a polynomial function (of *multiplier*) by use of Horner’s rule
 (see [Horner's method](https://en.wikipedia.org/wiki/Horner%27s_method) ) and brings the result into proper range.
 For instance, another way of computing
 
