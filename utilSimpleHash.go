@@ -16,7 +16,6 @@ func Hash(key string, p uint64, multiplier uint64) uint64 {
 		hashVal = multiplier*hashVal + uint64(ch)
 	}
 	return uint64(hashVal % p)
-
 }
 
 // A hash closure for string objects

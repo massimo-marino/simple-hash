@@ -20,7 +20,6 @@ import (
 // 0 <= B <= P - 1
 func simpleUniversalHash(key uint64, A uint64, B uint64, P uint64, M uint64) uint64 {
 	return ((((A) * key) + B) % P) % M
-
 }
 
 // Simple implementation of universal hashing
@@ -46,7 +45,6 @@ func universalHash(key uint64, A uint64, B uint64, M uint64) uint64 {
 	}
 
 	return uint64(hashVal % M)
-
 }
 
 // A universal hash closure implementing the Carter-Wegman method
