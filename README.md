@@ -1,12 +1,12 @@
-## simple-hash
-### A simple hash function in go.
+## simple hash
+### A simple hash function in go
 
 **Files:** *utilSimpleHash.go, utilSimpleHash_test.go*
 
 This hash function involves all characters in the key and can generally be expected to
 distribute well.
 The code computes a polynomial function (of *multiplier*) by use of Horner’s rule
-(see [Horner's method](https://en.wikipedia.org/wiki/Horner%27s_method) ) and brings the result into proper range.
+(see [Horner's method on Wikipedia](https://en.wikipedia.org/wiki/Horner%27s_method) ) and brings the result into proper range.
 For instance, another way of computing
 
 **hk = key[0] + multiplier * key[1] + multiplier^2 * key[2]**
@@ -31,3 +31,19 @@ couple of characters from the city name and ZIP code.
 Some programmers implement their hash function by using only the characters
 in the odd spaces, with the idea that the time saved computing the hash
 function will make up for a slightly less evenly distributed function.
+
+See the test file for examples about usage.
+
+## universal hash
+### Universal hashing in go
+
+**Files:** *utilUniversalHash.go, utilUniversalHash_test.go*
+
+The universal hashing function implements the *Carter-Wegman method*.
+
+See the following links about Universal Hashing:
+
+[Carter-Wegman method's paper](https://www.cs.princeton.edu/courses/archive/fall09/cos521/Handouts/universalclasses.pdf)
+[Universal Hashing on Wikipedia](https://en.wikipedia.org/wiki/Universal_hashing)
+
+See the test file for examples about usage.
