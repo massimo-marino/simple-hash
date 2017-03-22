@@ -1,20 +1,19 @@
 # simple-hash
-a simple hash function in go
+A simple hash function in go.
 
-This hash function involves all characters in the key and can generally be
-expected to distribute well.
+This hash function involves all characters in the key and can generally be expected to
+distribute well.
 The code computes a polynomial function (of multiplier) by use of Horner’s rule
-(see https://en.wikipedia.org/wiki/Horner%27s_method) and brings the result
-into proper range.
+(see [Horner's method](https://en.wikipedia.org/wiki/Horner%27s_method) ) and brings the result into proper range.
 For instance, another way of computing
 
-hk = key[0] + multiplier * key[1] + multiplier^2 * k[2]
+**hk = key[0] + multiplier * key[1] + multiplier^2 * k[2]**
 
 is by the formula
 
-hk = ((k[2] ) ∗ multiplier + k[1] ) ∗ multiplier + k[0]
+**hk = ((k[2] ) ∗ multiplier + k[1] ) ∗ multiplier + k[0]**
 
-Horner’s rule extends this to an n-th degree polynomial.
+Horner’s rule extends this to an *n-th* degree polynomial.
 
 The hash function takes advantage of the fact that overﬂow is allowed and
 uses unsigned int's to avoid introducing a negative number.
