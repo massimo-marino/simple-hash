@@ -43,7 +43,7 @@ The universal hashing function implements the *Carter-Wegman method*.
 
 See the following links about Universal Hashing:
 
-[Carter-Wegman method's paper](https://www.cs.princeton.edu/courses/archive/fall09/cos521/Handouts/universalclasses.pdf)
-[Universal Hashing on Wikipedia](https://en.wikipedia.org/wiki/Universal_hashing)
+- [Carter-Wegman method's paper](https://www.cs.princeton.edu/courses/archive/fall09/cos521/Handouts/universalclasses.pdf)
+- [Universal Hashing on Wikipedia](https://en.wikipedia.org/wiki/Universal_hashing)
 
 See the test file for examples about usage.
